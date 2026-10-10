@@ -76,7 +76,7 @@ def main():
     renderer = None
     frames = []
     if not args.no_video:
-        renderer = mujoco.Renderer(model, height=480, width=640)
+        renderer = mujoco.Renderer(model, height=480, width=640)#Mujoco화면을 이미지로 만들ㅇ주는 Renderer 객체 생성 , 매번 렌더링 할 때 해당 사이즈 크기만큼으로 만들어준다. 
 
     fps = 30
     steps_per_frame = int(1 / (fps * model.opt.timestep))
